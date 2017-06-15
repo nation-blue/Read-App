@@ -1,0 +1,187 @@
+@import '../../resource/base';
+h1,h2,h3,h4{
+    font-weight: normal;
+}
+@font-face {
+  font-family: 'iconfont'; 
+  src: url('//at.alicdn.com/t/font_us5mflcwnj73z0k9.eot');
+  src: url('//at.alicdn.com/t/font_us5mflcwnj73z0k9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_us5mflcwnj73z0k9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_us5mflcwnj73z0k9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_us5mflcwnj73z0k9.svg#iconfont') format('svg');
+}
+#box2{
+    @include wh(100%,auto);
+}
+/*header*/
+#header-book{
+    @include wh(100%,0.92rem);
+    background: #29a6dc;
+    .inner-box{
+        @include wh(7.02rem,0.92rem);
+        @include center;
+        .circle,.circle2{
+            @include wh(0.5rem,0.5rem);
+            position: absolute;
+            top:0;
+            bottom: 0;
+            margin: auto;
+            border: 0.03rem solid #076cbe;
+            border-radius: 50%;
+            font-family: "iconfont" !important;
+            font-size: 0.35rem;
+            font-style: normal;
+            text-align: center;
+            color: #4bb4e2;
+            line-height: 0.5rem;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale; 
+        }
+        .circle{
+            left: 0;
+        }
+        .circle2{
+            right: 0;
+        }
+        .search-center{
+            @include wh(5.6rem,0.54rem);
+            @include center;
+            background-image: url($img-path+'images/12.png');
+            background-size:cover;
+            box-shadow: 0 0 0.1rem rgba(35,145,209,1);
+            input{
+                position: absolute;
+                left:0.64rem;
+                top:0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                border: none;
+                outline: none;
+                background: #f6f6f6;
+                color: #838383;
+                font-size: 0.22rem;
+                font-family: "苹方","微软雅黑";
+            }
+        }
+    }
+}
+/*header*/
+ .title-top-box2{
+     @include wh(7.02rem,0.75rem);
+     margin-left: 0.24rem;
+     margin-top: 0.24rem;
+    .circle{
+        @include wh(0.3rem,0.3rem);
+        margin-top: 0.1rem;
+        margin-left: 0.15rem;
+        float: left;
+        background-image: url($img-path+'images/1.png');
+        background-size:cover;
+    } 
+ }
+ .zibox{
+     float: left;
+     height: 100%;
+     margin-top: 0.1rem;
+     margin-left: 0.16rem;
+     .name{
+        font-size: 0.3rem;
+        line-height: 0.3rem;
+        color: #333;
+        font-weight: bold;
+        font-family: "苹方","微软雅黑";
+        .three{
+             @include wh(0.18rem,0.04rem);
+             position: absolute;
+             bottom: 0;
+             right: 0.05rem;
+             background-image: url($img-path+'images/three.png');
+             background-size:cover; 
+        }
+    }
+    .nameE{
+        margin-top: 0.1rem;
+        font-size: 0.22rem;
+         line-height: 0.22rem;
+        color: #666;
+        font-family: "苹方","微软雅黑";
+    }
+}
+.content-box{
+    @include wh(7.02rem,1.70rem);
+    margin-left: 0.24rem;
+    margin-top: 0.28rem;
+    background: #fff;
+    border-radius: 2%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    .picture{
+        @include wh(2.26rem,1.52rem);
+        @include top-bottom;
+        left:0.08rem;
+        background-image: url($img-path+'images/9.png');
+        background-size:cover; 
+    }
+    .dotted{
+         @include wh(0.17rem,1.52rem);
+         @include top-bottom;
+         left:2.46rem;
+         border-left: 0.03rem dotted #c7c7c7;
+    }
+    .right-content{
+        height: 1.52rem;
+        @include top-bottom;
+        left:2.63rem;
+        right:0.55rem;
+        h1{
+            font-size: 0.28rem;
+            text-align: left;
+            line-height: 0.28rem;
+            color: #333;
+            font-family: "苹方","微软雅黑";
+        }
+        .content-center{
+            position: absolute;
+            top:0.38rem;
+            @include left-right;
+            font-size: 0.22rem;
+            text-align: left;
+            line-height: 0.34rem;
+            color: #666;
+            font-family: "苹方","微软雅黑";
+        }
+        .chuban,.pos{
+            height: 0.24rem;
+            position: absolute;
+            bottom: 0;
+            padding-left: 0.3rem;
+            color: #999999;
+            height: 0.24rem;
+            font-size: 0.16rem;
+            line-height: 0.24rem;
+            font-family: "苹方","微软雅黑";
+        }
+        .chuban{
+            left:0;
+            div{
+                @include wh(0.18rem,0.24rem);
+                @include top-bottom;
+                left: 0;
+                background-image: url($img-path+'images/11.png');
+                background-size:cover; 
+            }
+             
+        }
+        .pos{
+            right: 0;
+            div{
+                @include wh(0.18rem,0.24rem);
+                @include top-bottom;
+                left: 0;
+                background-image: url($img-path+'images/10.png');
+                background-size:cover; 
+            }
+        }
+    }
+}

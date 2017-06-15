@@ -1,0 +1,218 @@
+@import '../../resource/base';
+
+#sy-35{
+    @include wh(100%,auto);
+    
+    #header2{
+        width:100%;
+        height:0.88rem;
+        background:#29a6dc;
+        overflow: hidden;
+        .circle,.circle2{
+            width: 0.4rem;
+            height: 0.4rem;
+            background: #fff;
+            border:0.02rem solid #0d76c3;
+            border-radius:50%;
+            position: absolute;
+            top:0.28rem;
+            left:0.23rem;
+            .icon{
+                line-height: 0.35rem;
+                text-align: center;
+                font-size:0.2rem;
+                color:#3daedf;
+                
+            }
+            a{
+                color: #3daedf;
+            }
+        }
+        .sqgl{
+                width: 2rem;
+                height: 0.65rem;
+                margin: 0 auto;
+                color: #fff;
+                margin-top: 0.2rem;
+                span:nth-of-type(1){
+                    display: block;
+                    font-size: 16px;
+                    text-align: center;
+                }
+                span:nth-of-type(2){
+                    display: block;
+                    font-size: 12px;
+                    text-align: center;
+                }
+            }
+    }
+    
+    
+    .shuqian {
+        width: 7.5rem;
+        margin-top: 0.6rem;
+        margin: 0 auto;
+        .shuq{
+            width: 100%;
+            li{
+                width: 100%;
+                height: 1.4rem;
+                margin-top: 0.1rem;
+                border-bottom: 1px dashed #151C2B;
+                .shuq-t{
+                    width: 0.8rem;
+                    height: 0.8rem;
+                    margin-top: 0.2rem;
+                    margin-left: 0.2rem;
+                    float: left;
+                    background-image: url($img-path+'sy/shuqian.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    border-radius: 50%;
+                }
+                p:nth-of-type(1){
+                    width: 5.1rem;
+                    float: left;
+                    font-size: 14px;
+                    margin-left: 0.3rem;
+                    margin-top: 0.2rem;
+                }
+                p:nth-of-type(2){
+                    width: 5.1rem;
+                    float: left;
+                    font-size: 12px;
+                    margin-left: 0.3rem;
+                }
+                .shijian{
+                    width: 2rem;
+                    float: left;
+                    margin-left: 0.2rem;
+                    margin-top: 0.08rem;
+                    div{
+                        width: 0.4rem;
+                        height: 0.4rem;
+                        float: left;
+                        background-image: url($img-path+'sy/riqi.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                    span{
+                        font-size: 12px;
+                        float: left;
+                        line-height: 0.45rem;
+                        margin-left: 0.1rem;
+                    }
+                }
+                .yan{
+                    width: 1.5rem;
+                    float: right;
+                    margin-left: 1.2rem;
+                    margin-top: 0.08rem;
+                    div{
+                        width: 0.42rem;
+                        height: 0.42rem;
+                        float: left;
+                        background-image: url($img-path+'sy/yan.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                    span{
+                        font-size: 12px;
+                        float: left;
+                        line-height: 0.45rem;
+                        margin-left: 0.1rem;
+                    }
+                }
+            }
+            .shuqs{
+                width: 100%;
+                height: 1.4rem;
+                margin-top: -1px;
+                border-bottom: 2px solid #28DD8B;
+                border-top: 2px solid #28DD8B;
+                .xs{
+                    display: none;
+                }
+                .shq-s{
+                    width: 6.6rem;
+                    height: 1.3rem;
+                    float: left;
+                    background-image: url($img-path+'sy/sq-bj.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+                .sc{
+                    width: 0.8rem;
+                    height: 100%;
+                    float: right;
+                    margin-right: 0.1rem;
+                    span{
+                        display: block;
+                        width: 0.4rem;
+                        height: 0.4rem;
+                        border: 1px solid #28DD8B;
+                        color: #28DD8B;
+                        font-size: 16px;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 0.3rem;
+                        margin-top: 0.5rem;
+                    }
+                }
+                p:nth-of-type(1){
+                    width: 5.1rem;
+                    float: left;
+                    font-size: 14px;
+                    margin-left: 0.3rem;
+                    margin-top: 0.2rem;
+                }
+                p:nth-of-type(2){
+                    width: 5.1rem;
+                    float: left;
+                    font-size: 12px;
+                    margin-left: 0.3rem;
+                }
+                .shijian{
+                    width: 2rem;
+                    float: left;
+                    margin-left: 0.2rem;
+                    margin-top: 0.08rem;
+                    div{
+                        width: 0.4rem;
+                        height: 0.4rem;
+                        float: left;
+                        background-image: url($img-path+'sy/riqis.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                    span{
+                        font-size: 12px;
+                        float: left;
+                        line-height: 0.45rem;
+                        margin-left: 0.1rem;
+                    }
+                }
+                .yan{
+                    width: 1.5rem;
+                    float: right;
+                    margin-left: 1.2rem;
+                    margin-top: 0.08rem;
+                    div{
+                        width: 0.42rem;
+                        height: 0.42rem;
+                        float: left;
+                        background-image: url($img-path+'sy/yans.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                    span{
+                        font-size: 12px;
+                        float: left;
+                        line-height: 0.45rem;
+                        margin-left: 0.1rem;
+                    }
+                }
+            }
+        }
+    }
+}

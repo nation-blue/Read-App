@@ -1,0 +1,213 @@
+@import 'base';
+$bg:#29A6DC;
+$quan:#1D79C3;
+$hover:#E4456B;
+$titlecolor:#151C2B;
+$contentcolor:#7E7E7E;
+*{
+    position: relative;
+    box-sizing: border-box;
+}
+@mixin center{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+@mixin top-bottom{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+@mixin left-right{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.header{
+    height: 1rem;
+    width: 100%;
+    background: $bg;
+    .circle{
+        width: 0.7rem;
+        height: 0.7rem;
+        border-radius: 50%;
+        background: #fff;
+        border: 2px solid $quan;
+        position: absolute;
+        bottom: 0.15rem;
+        left: 0.2rem;
+        text-align: center;
+        line-height: 0.6rem;
+        font-size: 0.4rem;
+        font-weight: 600;
+        color: $bg;
+    }
+    .navbar{
+        width: 70%;
+        height: 0.85rem;
+        bottom: 0.08rem;
+        background: #2A3441;
+        border-radius: 0.5rem;
+        @include left-right;
+        .mulu{
+            width: 30%;
+            height: 80%;
+            border: 2px solid #fff;
+            border-radius: 0.5rem;
+            float: left;
+            margin-top: 0.1rem;
+            margin-left: 0.1rem;
+            p:nth-of-type(1){
+             width: 60%;
+             height: 30%;
+             color: #fff;
+             text-align: center;
+             @include left-right;
+             
+             font-size: 0.3rem;
+            }
+            p:nth-of-type(2){
+             width: 60%;
+             height: 30%;
+             color: #fff;
+             text-align: center;
+             @include left-right;
+             bottom: 0.1rem;
+             font-size: 0.1rem;
+            }            
+        }
+        .mark{
+            width: 30%;
+            height: 80%;
+            border: 2px solid #fff;
+            border-radius: 0.5rem;
+            float: left;
+            margin-top: 0.1rem;
+            margin-left: 0.1rem;
+            background:#29A6DC;
+            p:nth-of-type(1){
+             width: 60%;
+             height: 30%;
+             color: #fff;
+             text-align: center;
+             @include left-right;
+             
+             font-size: 0.3rem;
+            }
+            p:nth-of-type(2){
+             width: 60%;
+             height: 30%;
+             color: #fff;
+             text-align: center;
+             @include left-right;
+             bottom: 0.1rem;
+             font-size: 0.1rem;
+            }             
+        }
+         .mynote{
+            width: 30%;
+            height: 80%;
+            border: 2px solid #fff;
+            border-radius: 0.5rem;
+            float: left;
+            margin-top: 0.1rem;
+            margin-left: 0.1rem;
+            p:nth-of-type(1){
+             width: 60%;
+             height: 30%;
+             color: #fff;
+             text-align: center;
+             @include left-right;
+             
+             font-size: 0.3rem;
+            }
+            p:nth-of-type(2){
+             width: 60%;
+             height: 30%;
+             color: #fff;
+             text-align: center;
+             @include left-right;
+             bottom: 0.1rem;
+             font-size: 0.1rem;
+            }             
+        }
+    }
+}
+.jilu{
+    width: 100%;
+    height: 0.48rem;
+    position: absolute;
+    top:1rem;
+    left:0;
+    background: #e5e5e5;
+    text-align: center;
+    line-height: 0.48rem;
+    color:#a8a8a8;
+}
+.bookmark{
+    width: 100%;
+    height: 1.6rem;
+    position: absolute;
+    top:1.48rem;
+    left:0;
+    .icon{
+        height: 80%;
+        margin-top: 0.32rem;
+        width: 20%;
+        background: url(../setting/note.png) 0.1rem 0.3rem no-repeat ;
+        float: left;
+    }
+    .content{
+        height: 1.6rem;
+        float: left;
+        width: 80%;
+        .pos{
+           padding-right: 20%; 
+           height: 50%;
+           color: #151C2B;
+           font-weight: 700;
+           font-size: 0.2rem; 
+           line-height: 0.9rem;
+           letter-spacing: 0.03rem; 
+           overflow: hidden;
+        }
+        .pos2{
+           padding-right: 20%;
+           height: 25%;
+           color:$contentcolor;
+           font-size: 0.2rem;
+           font-weight: 500; 
+           overflow: hidden;
+           line-height: 0.4rem; 
+        }
+        .time{
+           padding-right: 20%;
+           height: 25%;
+           color: $contentcolor;
+           font-size: 0.2rem;
+           line-height: 0.4rem; 
+               .eye{
+            height: 100%;
+            width: 20%;
+            position: absolute;
+            bottom: 0rem;
+            right: 20%;
+            .icon{
+                width: 50%;
+                float: left;
+                background: url(../setting/note.png) 0 -184px no-repeat;
+                margin-top: 0;
+            }
+            .pos1{
+                float: left;
+            }
+        }  
+        }
+
+    }
+}

@@ -1,0 +1,253 @@
+@import '../../resource/base';
+h1,h2,h3,h4{
+    font-weight: normal;
+}
+*{
+     font-family: "苹方","微软雅黑";
+}
+@font-face {
+  font-family: 'iconfont'; 
+  src: url('//at.alicdn.com/t/font_us5mflcwnj73z0k9.eot');
+  src: url('//at.alicdn.com/t/font_us5mflcwnj73z0k9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_us5mflcwnj73z0k9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_us5mflcwnj73z0k9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_us5mflcwnj73z0k9.svg#iconfont') format('svg');
+}
+#box3{
+    @include wh(100%,15rem);
+}
+/*header*/ 
+#header-book{
+    @include wh(100%,0.88rem);
+    background: #29a6dc;
+    .inner-box{
+        @include wh(7.02rem,0.88rem);
+        @include center;
+         .circle,.circle2{
+            @include wh(0.5rem,0.5rem);
+            position: absolute;
+            top:0;
+            bottom: 0;
+            margin: auto;
+            border: 0.03rem solid #076cbe;
+            border-radius: 50%;
+            background: #fff;
+            font-family: "iconfont" !important;
+            font-size: 0.35rem;
+            font-style: normal;
+            text-align: center;
+            color: #4bb4e2;
+            line-height: 0.5rem;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale; 
+        }
+        .circle{
+            left: 0;
+        }
+        .circle2{
+            right: 0;
+             line-height: 0.6rem;
+        }
+        .search-center{
+            @include wh(5.6rem,0.54rem);
+            @include center;
+            background-image: url($img-path+'images/12.png');
+            background-size:cover;
+            box-shadow: 0 0 0.1rem rgba(35,145,209,1);
+            input{
+                position: absolute;
+                left:0.64rem;
+                top:0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                border: none;
+                outline: none;
+                background: #f6f6f6;
+                color: #838383;
+                font-size: 0.22rem;
+            }
+        }
+    }
+}
+/*header*/
+.title-top-box{
+    @include wh(100%,3.75rem);
+    background: #fff;
+     box-shadow: 0 0 15px rgba(0,0,0,0.2);
+     margin-top: 0.28rem;
+     .picture{
+         @include wh(2.46rem,3.49rem);
+         @include top-bottom;
+         left: 0.25rem;
+         background-image: url($img-path+'images/13.png');
+         background-size:cover;
+     }
+     .right-box{
+         height: 3.49rem;
+         @include top-bottom;
+         left: 3.05rem;
+         right:0.34rem;
+         h1{
+             height: 0.47rem;
+             text-align: left;
+             line-height: 0.67rem;
+             color: #333;
+             font-size: 0.28rem;
+         }
+         h2{
+             height: 0.4rem;
+             text-align: left;
+             line-height: 0.4rem;
+             color: #999;
+             font-size: 0.16rem;
+           
+         }
+          h3{
+             text-align: left;
+             line-height: 0.3rem;
+             color: #666;
+             font-size: 0.22rem;
+         }
+         .bottom-box-left{
+             position: absolute;
+             left:0;
+             bottom: 0.18rem;
+             p{
+                 text-align: left;
+                 line-height: 0.3rem;
+                 color: #bdbdbd;
+                 font-size: 0.18rem;
+             }
+             .xi-box{
+                 padding-top: 0.18rem;
+                 .xi{
+                     float: left;
+                     @include wh(0.28rem,0.23rem);
+                     background-image: url($img-path+'images/xi1.png');
+                     background-size:cover;
+                 }
+                  .xi.xi2{
+                       background-image: url($img-path+'images/xi2.png');
+                  }
+                 .xi:after{
+                     content: '';
+                     display: block;
+                     clear: both;
+                 }
+             }
+         }
+         .bottom-box-right{
+             position: absolute;
+             right:0;
+             bottom: 0.18rem;
+             @include wh(1.75rem,0.54rem);
+             background-image: url($img-path+'images/14.png');
+             background-size:cover;
+             background-position: center center;
+             .wenzi{
+                  @include wh(100%,0.54rem);
+                  color: #fff;
+                  font-size: 0.18rem;
+                  text-align: center;
+                  line-height: 0.54rem;
+             }
+             .circleL,.circleR{
+                 @include wh(0.06rem,0.06rem);
+                 background: #fff;
+                 @include top-bottom;
+                 border-radius: 50%;
+             }
+             .circleL{
+                 left:0.08rem;
+             }
+              .circleR{
+                 right:0.08rem;
+             }
+         }
+     }
+}
+#zhao-bookshelf{
+    position: absolute!important;
+    @include center;
+    top:0.88rem!important;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    .type-box{
+        @include wh(100%,4.18rem);
+        .options{
+            @include wh(100%,1.15rem);
+            background: #fff;
+            box-shadow: 0 0.1rem 10rem rgba(0,0,0,0.3);
+            z-index: 10;
+            .sorts-box{
+                @include wh(5.84rem,0.86rem);
+                @include center;
+                 background-image: url($img-path+'images/15.png');
+                background-size:cover;
+                background-position: center center;
+                .zonghe,.time{
+                    @include wh(2.41rem,0.68rem);
+                    @include top-bottom;
+                    .zi{
+                        @include center;
+                        h1{
+                            padding-top: 0.14rem;
+                           text-align: center;
+                            font-size: 0.24rem;
+                            color: #fff;
+                            line-height: 0.3rem;
+                        }
+                        h2{
+                           text-align: center;
+                            font-size: 0.14rem;
+                            color: #bddbe8;
+                            line-height: 0.12rem;
+                             font-variant: small-caps;
+                        }
+                    }
+                    .backg{
+                         @include wh(2.41rem,0.68rem);
+                         @include center;
+                        background-image: url($img-path+'images/16.png');
+                        background-size:cover;
+                        background-position: center center;
+                    }
+                    .none{
+                        display: none;
+                    }
+                }
+                .zonghe{
+                    left:0.08rem;
+                }
+                .time{
+                    right:0.08rem;
+                }
+            }
+        }
+        .all-sort-box{
+            @include center;
+            top:1.15rem;
+            background: #fff;
+            border-bottom-left-radius: 15%;
+            border-bottom-right-radius: 15%;
+            .name{          
+                 @include wh(1.75rem,0.44rem);
+                 margin: 0.18rem 0 0.18rem 0.53rem;
+                 border: 0.01rem solid #2a3441;
+                 border-radius: 0.5rem;
+                 text-align: center;
+                 line-height: 0.44rem;
+                 font-size: 0.24rem;
+                 float: left;
+            }
+            .name.change{
+                border: none;
+                background: #29a6dc;
+                color: #fff;
+            }
+        }
+    }
+    
+}

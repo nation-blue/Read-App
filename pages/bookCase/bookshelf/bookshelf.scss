@@ -1,0 +1,325 @@
+@import '../../resource/base';
+h1,h2,h3,h4{
+    font-weight: normal;
+}
+*{
+    font-family: "苹方","微软雅黑";
+}
+#box1{
+    @include wh(100%,17rem);
+    overflow: visible;
+}
+@font-face {
+  font-family: 'iconfont'; 
+  src: url('//at.alicdn.com/t/font_us5mflcwnj73z0k9.eot');
+  src: url('//at.alicdn.com/t/font_us5mflcwnj73z0k9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_us5mflcwnj73z0k9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_us5mflcwnj73z0k9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_us5mflcwnj73z0k9.svg#iconfont') format('svg');
+}
+/*header*/
+
+#header-bookshelf{
+    @include wh(100%,0.88rem);
+    background: #29a6dc;
+    .inner-box{
+        @include wh(7.02rem,0.9rem);
+        @include center;
+        .circle2{
+            @include wh(0.5rem,0.5rem);
+            position: absolute;
+            top:0;
+            bottom: 0;
+            margin: auto;
+            border: 0.03rem solid #076cbe;
+            border-radius: 50%;
+            background: #fff;
+            font-family: "iconfont" !important;
+            font-size: 0.35rem;
+            color: #4bb4e2;
+            font-style: normal;
+            text-align: center;
+            line-height: 0.5rem;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale; 
+        }
+        .circle2{
+            right: 0;
+        }
+        .search-center{
+            @include wh(5.6rem,0.54rem);
+            @include center;
+            .title{
+               text-align: center;
+               color: #fff;
+               font-size: 0.36rem; 
+               line-height: 0.3rem;
+            }
+            .line{
+                @include wh(0.84rem,0.07rem);
+                @include left-right;
+                background-image: url($img-path+'images/line.png');
+                background-size:cover;
+            }
+            .titleE{
+               text-align: center;
+               color: #fff;
+               font-size: 0.18rem; 
+               line-height: 0.4rem;
+               font-variant: small-caps;
+            }
+        }
+    }
+}
+/*header*/
+.banner{                 
+     @include wh(100%,4.07rem);
+     padding-top: 0.38rem;
+     #dg-container{
+          @include wh(7.02rem,3.69rem);
+          margin-left: 0.24rem;
+          .dg-wrapper{
+               @include wh(6.67rem,3.21rem);
+               @include left-right;
+               top:0;
+               background-image: url($img-path+'images/7.png');
+               background-size:cover;
+          }
+          .button{
+              @include wh(0.6rem,0.24rem);
+               @include left-right;
+               bottom: 0;
+               li{
+                    @include wh(0.08rem,0.08rem);
+                    float: left;
+                    margin: 0 0.06rem;
+                    border: 0.01rem solid #3fabfe;
+                    border-radius: 50%;
+               }
+               .first{
+                   background: #3fabfe;
+               }
+          }
+     }
+}
+ .title-top-box1{
+     @include wh(7.02rem,0.75rem);
+     margin-left: 0.23rem;
+    .circle{
+        @include wh(0.3rem,0.3rem);
+        margin-top: 0.1rem;
+        margin-left: 0.15rem;
+        float: left;
+        background-image: url($img-path+'images/1.png');
+        background-size:cover;
+    }  
+ }
+.zibox{
+     float: left;
+     height: 100%;
+     margin-top: 0.1rem;
+     margin-left: 0.16rem;
+     .name{
+        font-size: 0.3rem;
+        line-height: 0.3rem;
+        color: #333;
+        font-weight: 700;
+        .three{
+             @include wh(0.18rem,0.04rem);
+             position: absolute;
+             bottom: 0;
+             left: 1.3rem;
+             background-image: url($img-path+'images/three.png');
+             background-size:cover; 
+        }
+    }
+    .nameE{
+        margin-top: 0.1rem;
+        font-size: 0.22rem;
+         line-height: 0.22rem;
+        color: #666;
+        font-variant: small-caps;
+    }
+}
+/*huadong-box*/
+.huadong-box{
+    @include wh(7.02rem,4.17rem);
+    margin-left: 0.24rem;
+     overflow: hidden;
+    .three-box{
+        @include wh(13.3rem,4.17rem);
+        padding-top: 0.32rem;
+        .float{
+            @include wh(2.5rem,3.61rem);
+            float: left;
+            margin: 0 0.08rem;
+            background-image: url($img-path+'images/17.png');
+            background-size:cover; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            .picture{
+                 @include wh(2.11rem,2.85rem);
+                 @include left-right;
+                 top:-0.15rem;
+                 background-image: url($img-path+'images/6.png');
+                 background-size:cover; 
+            }
+            .bookname{
+                @include left-right;
+                bottom: 0.5rem;
+                color: #fff;
+                font-size: 0.24rem;
+                line-height: 0.24rem;
+                color: #858585;
+                text-align: center;
+            }
+            .Ename{
+                @include left-right;
+                bottom: 0.28rem;
+                color: #fff;
+                font-size: 0.18rem;
+                line-height: 0.18rem;
+                color: #858585;
+                text-align: center;
+                font-variant: small-caps;
+            }
+        }
+    }
+}
+/*huadong-box*/
+.content-box1{
+    @include wh(7.02rem,2.22rem);
+    margin-left: 0.24rem;
+    margin-top: 0.28rem;
+    background: #fff;
+    border-radius: 2%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    .picture{
+        @include wh(1.38rem,1.99rem);
+        @include top-bottom;
+        left:0.12rem;
+        background-image: url($img-path+'images/5.png');
+        background-size:cover; 
+    }
+    .right-box{
+        height: 1.99rem;
+        @include top-bottom;
+        left: 1.70rem;
+        right:0.1rem;
+        h1{
+            font-size: 0.28rem;
+            text-align: left;
+            line-height: 0.5rem;
+            color: #333;
+            font-family: "苹方","微软雅黑";
+        }
+        p{
+            color: #d9d9d9;
+            font-size: 0.16rem;
+            text-align: left;
+            line-height: 0.2rem;
+            font-family: "苹方","微软雅黑";
+            font-variant: small-caps;
+        }
+        .dotted{
+             @include wh(3.42rem,0.1rem);
+             border-bottom: 0.02rem dotted #999;
+        }
+        h2{
+            height: 0.44rem;
+             color: #b3b3b3;
+            font-size: 0.22rem;
+            text-align: left;
+            line-height: 0.44rem;
+            font-family: "苹方","微软雅黑";
+        }
+        span{
+            position: absolute;
+            left: 0;
+            bottom: 0.07rem;
+            color: #999;
+            font-size: 0.16rem;
+        }
+         span:after{
+             content: '36%';
+             color: #39bbeb;
+             font-size: 0.16rem;
+         }
+         .readpercent{
+             @include wh(1.70rem,0.06rem);
+             position: absolute;
+             left: 1.1rem;
+             bottom:0.19rem;
+             background: #d4d4d4;
+             border-radius: 50rem;
+             .percent{
+                 @include wh(36%,0.06rem);
+                 background: #94d1e6;
+             }
+         }
+        .read{
+             @include wh(1.51rem,0.44rem);
+             background-image: url($img-path+'images/4.png');
+            background-size:cover; 
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            color: #fff;
+            font-size: 0.22rem;
+            text-align: center;
+            line-height: 0.44rem;
+        }
+    }
+}
+.fixed{
+    @include wh(100%,1rem);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    .type{
+        @include wh(33.33333%,1rem);
+        float: left;
+        background-image: url($img-path+'images/type2.png');
+        background-size:cover; 
+        .xian{
+            @include wh(0.02rem,0.94rem);
+            @include top-bottom;
+            left:0;
+            background: #717171;
+        }
+        .contain{
+            @include wh(0.54rem,1rem);
+            @include center;
+            .picture{
+                @include wh(0.54rem,0.5rem);
+                font-family: "iconfont";
+                color: #67686a;
+                text-align: center;
+                line-height: 0.7rem;
+                 font-size: 0.4rem;
+            }
+            .picture.change{
+                   font-size: 0.5rem;
+            }
+            .picture.change.only{
+                line-height: 0.6rem;
+            }
+            .name{
+                 @include wh(0.54rem,0.5rem);
+                  color: #67686a;
+                  font-size: 0.26rem;
+                  text-align: center;
+                  line-height: 0.5rem;
+            }
+        }
+    }
+    .type2.type{
+        background-image: url($img-path+'images/type1.png');
+        .contain{
+             .picture,.name{
+                color: #fff;
+              }
+        }   
+    }
+}

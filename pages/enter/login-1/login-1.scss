@@ -1,0 +1,217 @@
+@import '../../resource/base';
+
+@mixin bacColor($c){
+    background: $c;
+}
+
+@mixin font($s,$c,$h){
+    font-size: $s;
+    color: $c;
+    line-height: $h;
+}
+
+@mixin bacImg($u,$x,$y){
+    background-image: url($img-path+$u);
+    background-position: $x $y;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+
+//
+
+body{
+background:#F2F2F2; 
+}
+
+//474 40 88 
+.login-1{
+    height: 100%;
+    background:#F2F2F2; 
+    .login-top{
+        @include wh(100%,auto)
+        .login-nav{
+            @include wh(100%,0.88rem)
+            background: #29a6dc;
+            .login-fanhui{
+                display: block;
+                @include wh(0.44rem,0.44rem);
+                @include top-bottom;
+                @include bacImg('login/nav-fanhui.png',0,0);
+                left: 0.25rem;
+            }
+            .login-title{
+                @include wh(6rem,0.88rem);
+                @include top-bottom;
+                @include font(0.36rem,#f2f2f2,0.88rem);
+                left: 0.69rem;
+                text-align: center;
+                //font-weight: 600;
+            }
+        }
+        .login-nav-bot{
+            @include wh(100%,3.48rem);
+            background: #2BA6DC;
+            position: relative;
+            .login-logo{
+                @include center;
+                @include wh(1rem,0.4rem);
+                line-height: 0.4rem;
+                font-size: 0.43rem;
+                color: #fff;
+            }
+        }
+    }
+    .login-bot{
+        @include wh(100%,auto);
+        padding: 0 0.67rem;
+        background:#F2F2F2;
+        .kong{
+            background:#F2F2F2;
+            @include wh(100%,1.37rem);
+        }
+        .mingyan{
+            background:#F2F2F2;
+            @include wh(100%,auto);
+            color: #0a196b;
+            font-size :0.24rem;
+            padding-bottom:0.9rem;
+            font-family: '苹方';
+            h3{
+                padding:0.09rem 0 ;
+                font-size :0.24rem;
+                font-weight: normal;
+            }
+            .one{
+                text-align: center;
+            }
+            .two{
+                text-align: right;
+                
+            }
+            
+        }
+        .login-form{
+            @include wh(100%,auto);
+            .login-user,.login-password{
+               @include wh(100%,0.88rem);
+               border-radius: 0.5rem; 
+               border: 1px solid #3D91FD;
+               margin-bottom: 0.38rem;
+               background: #fff;
+               div:nth-child(1){
+                   @include wh(0.44rem,0.44rem);
+                   @include top-bottom;
+                   left: 0.45rem;
+               }
+               input{
+                 @include wh(4.5rem,100%);
+                 @include top-bottom;
+                 left: 1.23rem;
+                 background: transparent;
+                 border: none;  
+                 outline: none;
+                 font-size: 0.28rem;
+                 line-height: 0.88rem;
+                 color: #333;
+                 z-index: 20;
+               }
+               .tishi{
+                  @include wh(4.5rem,0.28rem);
+                  @include font(0.28rem,#999,0.28rem) ;
+                  @include top-bottom;
+                  left: 1.23rem;
+                  z-index: 10;
+               }
+            }
+            .login-user{
+                .u-img{
+                    @include wh(0.44rem,0.44rem);
+                    @include bacImg('login/login-user1.png',0,0);
+                }
+            }
+            .login-password{
+                .p-img{
+                    @include wh(0.44rem,0.44rem); 
+                    @include bacImg('login/login-pass1.png',0,0);
+                    
+                }
+            }
+            .login-fs{
+                @include wh(100%,0.25rem);
+               // background: red;
+                .login-find,.login-sign{
+                    display: inline-block;
+                    @include wh(1.76rem,100%);
+                    div:nth-child(1){
+                       @include wh(0.25rem,0.25rem);
+                       @include top-bottom;
+                    }
+                    a{
+                        display: inline-block;
+                        @include wh(auto,0.25rem);
+                        @include font(0.22rem,#666,0.26rem);
+                        @include top-bottom;
+                        left: 0.5rem;
+                    }
+                }
+                .login-find{
+                    position: absolute;
+                    left: 0.44rem;
+                    top:0;
+                    div{
+                        @include bacImg('login/login-mima.png',0,0);
+                    }
+                }
+                .login-sign{
+                    position: absolute;
+                    right: 0.44rem;
+                    top:0;
+                    div{
+                        @include bacImg('login/login-zhuce.png',0,0);
+                    }
+                }
+            }
+            .login-button{
+                margin-top:0.94rem;
+                @include wh(100%,0.68rem);
+                .login-btn{
+                    @include wh(5.64rem,100%);
+                    @include left-right;
+                    border-radius: 50px;
+                    background: #3DBFFD;
+                    z-index: 10;
+                    .l-circle{
+                       @include wh(0.06rem,0.06rem); 
+                       border-radius:50%;
+                       background: #fff;
+                       @include top-bottom;
+                       
+                       z-index: 20;
+                    }
+                    .l-circle:nth-of-type(1){
+                        left: 0.32rem;
+                    }
+                    .l-circle:nth-of-type(2){
+                        right: 0.32rem;
+                    }
+                    .rightNow{
+                        display: block;
+                        @include wh(4.96rem,100%);
+                        @include left-right;
+                        text-align: center;
+                        @include font(0.28rem,#fff,0.68rem)
+                    }
+                }
+                
+                
+            }
+            
+        }
+    }
+    .login-dis{
+        display: none;
+    }
+
+} 

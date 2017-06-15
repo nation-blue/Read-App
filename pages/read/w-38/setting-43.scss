@@ -1,0 +1,467 @@
+@import 'base.scss';
+$color:#151c2b #3ed929;
+    //背景颜色 进度条颜色
+$font:"苹方","microsoft yahei","helvetica","arial" ,"sans-serif";
+//字体
+$img-path:"../";
+//图片路径
+$pifu:#fcf3db #ffe9b0 #d8a764 #3876ac #21858e #f4c5d4 #79d143; 
+//皮肤选择
+$anniu:#ffd235;
+//按钮颜色
+#s-43{
+    width: 100%;
+    height:2.8rem;
+    background: nth($color,1);
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    display: none;
+    .inner{
+        width:7.1rem;
+        height:0.66rem;
+        @include left-right;
+        color:#fff;
+        .name{
+            @include wh(0.74rem,100%);
+            padding-left:0.2rem;
+            float:left;
+            font-size:0.24rem;
+            line-height: 0.66rem;
+            font-family:$font;
+        }
+        .icon{
+             @include wh(0.74rem,100%);
+             float:left;
+             background:url(../setting/1.png) no-repeat 0 0; 
+             background-size:cover;
+        }
+        .tiao{
+            @include wh(4.74rem,0.06rem);
+            margin-top: 0.3rem;
+            float: left;
+            border-radius: 0.03rem;
+            background: #d5d5d5;
+            .jd{
+                @include wh(0.5rem,100%);
+                background:nth($color,2);
+                border-radius: 0.03rem;
+            }
+            .btn{
+                @include wh(0.18rem,0.18rem);
+                position: absolute;
+                left:0.5rem;
+                top:-0.06rem;
+                background:url(../setting/btn.png) no-repeat 0 0;  
+                background-size: cover;     
+            }
+        }        
+    }
+    .zi{
+        top:0;
+    }
+    .hang{
+        top:0.66rem;
+        .icon{
+            background:url(../setting/cz.png) no-repeat 0 0.03rem;
+            background-size: cover; 
+        }
+    }
+    .bj{
+        width:7.1rem;
+        height:1.1rem;
+        @include left-right;
+        color:#fff;
+        top:1.32rem;
+        .name{
+            @include wh(0.74rem,100%);
+            padding-left:0.2rem;
+            float:left;
+            font-size:0.24rem;
+            line-height: 0.66rem;
+            font-family:$font;
+        }
+        .color{
+            @include wh(6.36rem,1.1rem);
+            float: left;
+            padding-left: 0.2rem;
+            li{
+                @include wh(12.5%,100%);
+                padding:0.16rem 0.06rem;
+                display:block;
+                float:left;
+                .top{
+                    width: 0.64rem;
+                    height: 0.64rem;
+                    background: #fff;
+                    line-height: 0.64rem;
+                    color:#313131;
+                    text-align: center;
+                    font-size: 0.26rem;
+                }
+                span{
+                    display: block;
+                    position:absolute;
+                    top:0.8rem;
+                    line-height: 0.26rem;
+                    left:0.06rem;
+                    color: #fff;
+                    font-size: 0.12rem;
+                    width:0.64rem;
+                    text-align: center;
+                    font-family: $font;
+                }
+            }
+            li:nth-of-type(1) .top{
+                   background:nth($pifu,1);
+            }
+             li:nth-of-type(2) .top{
+                   background:nth($pifu,2);
+                   border: 0.04rem solid #41e441;
+                   border-radius: 0.04rem;
+            }
+             li:nth-of-type(3) .top{
+                   background:nth($pifu,3);
+            }
+             li:nth-of-type(4) .top{
+                   background:nth($pifu,4);
+            }
+             li:nth-of-type(5) .top{
+                   background:nth($pifu,5);
+            }
+             li:nth-of-type(6) .top{
+                   background:nth($pifu,6);
+            }
+             li:nth-of-type(7) .top{
+                   background:nth($pifu,7);
+            }
+        }
+    }
+}
+.tiao{
+            @include wh(4.74rem,0.06rem);
+            margin-top: 0.3rem;
+            float: left;
+            border-radius: 0.03rem;
+            background: #d5d5d5;
+            .jd{
+                @include wh(0.5rem,100%);
+                background:nth($color,2);
+                border-radius: 0.03rem;
+            }
+            .btn{
+                @include wh(0.18rem,0.18rem);
+                position: absolute;
+                left:0.5rem;
+                top:-0.06rem;
+                background:url(../setting/btn.png) no-repeat 0 0;  
+                background-size: cover;     
+            }
+        }
+#s-44{
+    width: 100%;
+    height:1.88rem;
+    background: nth($color,1);
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    padding-top:0.16rem;
+    font-family: $font;
+    z-index: 99;
+    display: none;
+    .inner{
+        width:7.1rem;
+        height:0.66rem;
+        @include left-right;
+        color:#fff;
+        .name{
+            @include wh(0.74rem,100%);
+            padding-left:0.2rem;
+            float:left;
+            font-size:0.24rem;
+            line-height: 0.66rem;
+            font-family:$font;
+        }
+        .icon{
+             @include wh(0.74rem,100%);
+             padding-top: 0.2rem;
+             float:left;
+             .xitong{
+                 @include wh(100%,0.3rem);
+                 border: 0.02rem solid #fff;
+                 border-radius: 0.03rem;
+                 line-height: 0.26rem;
+                 font-size: 0.14rem;
+                 text-align: center;
+             }
+        }
+        .tiao{
+            @include wh(4.74rem,0.06rem);
+            margin-top: 0.3rem;
+            float: left;
+            border-radius: 0.03rem;
+            background: #d5d5d5;
+            .jd{
+                @include wh(0.5rem,100%);
+                background:nth($color,2);
+                border-radius: 0.03rem;
+            }
+            .btn{
+                @include wh(0.18rem,0.18rem);
+                position: absolute;
+                left:0.5rem;
+                top:-0.06rem;
+                background:url(../setting/btn.png) no-repeat 0 0;  
+                background-size: cover;     
+            }
+        }        
+    }
+    .hang{
+        top:0.9rem;
+        .name.rt{
+            padding-left:2rem;
+        }
+        .name{
+            width:50%;
+            .icon.sel{
+                .anniu{
+                   background: #ffd235; 
+                }
+            }
+            .icon{
+                @include wh(0.2rem,0.2rem);
+                border-radius: 50%;
+                background: #fff;
+                top:0.24rem;
+                z-index: 10;
+                .anniu{
+                    background: #7d7d7d;
+                    @include wh(0.1rem,0.1rem);
+                    border-radius: 50%;
+                    position: absolute;
+                    left:0.05rem;
+                    top:0.05rem ;
+                }
+            }
+            .mos{
+                padding-left: 0.38rem;
+            }
+        }
+        
+    }
+}
+#s-45:after{
+    content: "";
+    display: block;
+    position: absolute;
+    left:50%;
+    top: 100%;
+    margin-left: -0.05rem;
+    border-top:0.1rem solid #272727;
+    border-left:0.1rem solid rgba(0,0,0,0);
+    border-right:0.1rem solid rgba(0,0,0,0);
+    
+}
+#s-45{
+    position: fixed;
+    top:50%;
+    left:20%;
+    @include wh(3.98rem,0.46rem);
+    background: #272727;
+    border-radius: 0.08rem;
+    z-index: 99;
+    .item{
+        width:20%;
+        height:100%;
+        border-left:0.02rem solid #202020;
+        margin-left: -0.02rem;
+        float: left;
+        text-align: center;
+        line-height: 0.46rem;
+        font-size: 0.18rem;
+        color: #fff;
+        font-family:$font ;
+    }
+    .item:nth-of-type(1){
+        margin-left: 0.01rem;
+        border-bottom-left-radius: 0.08rem;
+        border-top-left-radius: 0.08rem;
+    }
+}
+#s-47:after{
+    content: "";
+    display: block;
+    position: absolute;
+    left:50%;
+    top: 100%;
+    margin-left: -0.05rem;
+    border-top:0.1rem solid #272727;
+    border-left:0.1rem solid rgba(0,0,0,0);
+    border-right:0.1rem solid rgba(0,0,0,0);
+    
+}
+#s-47{
+    position: fixed;
+    top:50%;
+    left:20%;
+    @include wh(3.98rem,0.46rem);
+    background: #272727;
+    border-radius: 0.08rem;
+    z-index: 99;
+    .item{
+        width:20%;
+        height:100%;
+        border-left:0.02rem solid #202020;
+        margin-left: -0.02rem;
+        float: left;
+        text-align: center;
+        line-height: 0.46rem;
+        font-size: 0.18rem;
+        color: #fff;
+        font-family:$font ;
+    }
+    .item:nth-of-type(1){
+        margin-left: 0.01rem;
+        border-bottom-left-radius: 0.08rem;
+        border-top-left-radius: 0.08rem;
+    }
+}
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1479437360923'); /* IE9*/
+  src: url('iconfont.eot?t=1479437360923#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1479437360923') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1479437360923') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1479437360923#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:0.16rem;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+#s-46{
+    @include wh(100%,100%);
+    position: fixed;
+    top:0;
+    left:0;
+    font-family: $font;
+    .header{
+        @include wh(100%,0.9rem);
+        background: #29a6dc;
+        .circle{
+            width: 0.46rem;
+            height: 0.46rem;
+            background: #fff;
+            border:0.04rem solid #0d76c3;
+            border-radius:50%;
+            position: absolute;
+            top:0.02rem;
+            left:0.24rem;
+            .icon{
+                line-height: 0.36rem;
+                text-align: center;
+                font-size:0.16rem;
+            }
+        }
+        .title{
+            position: absolute;
+            left:50%;
+            margin-left: -0.7rem;
+            font-size: 0.36rem;
+            color:#fff;
+            div{
+                @include wh(0.86rem,0.23rem);
+                background: url(../setting/mynote.png) no-repeat 0 0;
+                background-size: cover;
+                position: absolute;
+                left: 50%;
+                margin-left: -0.43rem;
+                top:100%;
+            }
+        }
+    }
+    .content:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .uzi{
+        top:0.23rem !important;
+    }
+    .content{
+        width:7.04rem;
+        @include left-right;
+        top:1rem;
+        .lists{
+            float:left;
+            overflow: visible;
+            width: 100%;
+            .listtop{
+                width: 100%;
+                height:0.54rem;
+                padding-left: 0.58rem;
+                background: url(../setting/mynote1.png) no-repeat 0.2rem 0.1rem;
+                background-size:0.27rem 0.27rem;
+                span{
+                    margin-right: 0.14rem;
+                    display: block;
+                    float: left;
+                    font-size: 0.22rem;
+                    line-height: 0.54rem;
+                }
+            } 
+            .listbottom{
+                @include wh(100%,3.3rem);
+                border-radius: 0.1rem;
+                box-shadow: #ebebeb 0 0  0.2rem;
+                font-size: 0.24rem;
+                padding: 0.1rem;
+                margin-bottom: 0.2rem;
+                .bg{
+                    @include wh(6.3rem,0.04rem);
+                    position: absolute;
+                    top: -0.06rem;
+                    left:0.14rem;
+                    background: url(../setting/line.png) no-repeat 0 0;
+                    background-size: 6.18rem 0.03rem;
+                    
+                }
+            }
+            .input{
+                margin-top: 0.24rem;
+                height:0.96rem;
+                textarea{
+                    width:100%;
+                    height:100%;
+                    resize: none;
+                    border:none;
+                    outline: none;
+                };
+            }
+            .btn{
+                width: 100%;
+                height: 0.65rem;
+                margin-top:0.46rem;
+                div{
+                    width: 1.69rem;
+                    height: 0.61rem;
+                    position:absolute;
+                    top: 0;
+                }
+                .left{
+                    left:0.96rem;
+                    background: url(../setting/bj.png) no-repeat 0 0;
+                    background-size: 1.69rem 0.61rem;  
+                }
+                .right{
+                    right:0.96rem;
+                    background: url(../setting/qd.png) no-repeat 0 0;
+                    background-size: 1.69rem 0.61rem;
+                }
+            }  
+        }
+    }
+}

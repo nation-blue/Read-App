@@ -1,0 +1,126 @@
+@import '../../resource/base';
+body{
+    background: #FAFAFA;
+    font-family:"苹方";
+    color: #666;
+}
+#my-29{
+    //头部
+    #head{
+        width:100%;
+        height:1rem;
+        background:#29a6dc;
+        .circle{
+            width: 0.44rem;
+            height: 0.44rem;
+            background: #fff;
+            box-sizing: border-box;
+            border:0.02rem solid #0b6ebf;
+            border-radius:50%;
+            left:0.24rem;
+            @include top-bottom;
+            .icon{
+                display: block;
+                line-height: 0.4rem;
+                text-align: center;
+                font-size:0.3rem;
+                color:#3daedf;
+            }
+        }
+        .biaoti_box{
+            @include wh(3.56rem,1rem);
+    //      background: red;
+            @include left-right;
+            
+            .dazi{
+                color: #fafafa;
+                font-size: 0.36rem;
+                text-align: center;
+                margin-top: 0.08rem;
+            }
+            .gang{
+                @include wh(0.35rem,0.04rem);
+                @include left-right;
+                background: url($img-path+'s_24-30/gang.png') no-repeat;
+                background-size:0.35rem,0.04rem ;
+            }
+            .xiaozi{
+                color:#90dcff;
+                font-size: 0.2rem;
+                text-align: center;
+                margin-top: 0.02rem;
+            }
+        }
+        
+    }
+    //内容部分
+    #bd_neirong{
+        @include wh(6.16rem,7rem);
+    //  background: red;
+        @include left-right;
+        .ssjh,.syzm{
+           @include wh(100%,0.88rem); 
+           background: #fff;
+           border:1px solid #3a91fd;
+           box-sizing: border-box;
+           position: absolute;
+           left:0;
+           top:0.59rem;
+           color: #999999;
+           font-size: 0.28rem;
+           line-height: 0.88rem;
+           padding-left: 0.34rem;
+           border-radius:0.5rem ;
+        }
+        .ssjhs,.syzms{
+           @include wh(5.82rem,0.88rem);
+//         background: pink;
+           position: absolute;
+           left:0.34rem;
+           top:0.59rem;
+           background: none;
+           border:none;
+           outline: none; 
+        }
+        .syzm,.syzms{
+           top:1.85rem; 
+           .hqyzm{
+              @include wh(1.88rem,0.52rem);
+              background: #3abffd;
+              @include top-bottom; 
+              right:0.18rem;
+              border-radius: 0.3rem;
+              text-align: center;
+              line-height: 0.52rem;
+              color: #fff;
+           }
+        }
+        .syzms{
+            width: 50%;
+        }
+        .sure1{
+            display: block;
+            @include wh(5.69rem,0.68rem);
+            background: #3abffd;
+            @include left-right;
+            top:3.48rem;
+            border-radius: 0.4rem;
+            text-align: center;
+            line-height: 0.68rem;
+            font-size: 0.28rem;
+            color:#fff; 
+        }
+        .qhzh{
+            @include wh(5.69rem,0.68rem);
+    //      background: #3abffd;
+            @include left-right;
+            top:4.7rem;
+    //      border-radius: 0.4rem;
+            text-align: center;
+            line-height: 0.68rem;
+            font-size: 0.3rem;
+            color:#a8a8a8;  
+        }
+    }
+}
+

@@ -1,0 +1,274 @@
+
+@import '../../resource/base';
+
+@mixin bacColor($c){
+    background: $c;
+}
+
+@mixin font($s,$c,$h){
+    font-size: $s;
+    color: $c;
+    line-height: $h;
+}
+
+@mixin bacImg($u,$x,$y){
+    background-image: url($img-path+$u);
+    background-position: $x $y;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+
+//
+
+body{
+    background:#fafafa; 
+}
+
+.messageS-21{
+    background:#F2F2F2; 
+    height: 100%;
+    .messageS-top{
+        @include wh(100%,auto);
+        .messageS-nav{
+            @include wh(100%,1rem);
+            background: #29a6dc;
+            .login-fanhui{
+                display: block;
+                @include wh(0.44rem,0.44rem);
+                @include top-bottom;
+                @include bacImg('login/nav-fanhui.png',0,0);
+                left: 0.25rem;
+            }
+            .login-title{
+                @include wh(6rem,1rem);
+                @include top-bottom;
+                left: 0.69rem;
+                text-align: center;
+                .one{
+                    @include wh(6rem,0.36rem);
+                    @include font(0.36rem,#f2f2f2,0.36rem);
+                    text-align: center; 
+                    margin-top: 0.19rem;
+                }
+                .two{
+                    @include wh(0.35rem,0.04rem);
+                    @include bacImg('login/nav-line.png',0,0);
+                    margin-left: 2.84rem;
+                    margin-top: 0.04rem;
+                }
+                .thr{
+                    @include wh(6rem,0.20rem);
+                    @include font(0.20rem,#90dcff,0.20rem);
+                    text-align: center;
+                    margin-top: 0.09rem;
+                    font-family: 'Myriad Pro';
+    //              font-variant:small-caps;
+                }
+            }
+        }
+    }
+    
+    .messageS-bot{
+        @include wh(100%,auto);
+        padding: 0 0.24rem;
+        .messageS-sel{
+            @include wh(100%,1.13rem);
+            .messageS-select{
+                @include wh(5.17rem,0.84rem);
+                @include left-right;
+                top:0.16rem;
+                background: #2a3441;
+                border-radius: 0.5rem;
+                .mS-left,.mS-right{
+                    @include wh(2.4rem,0.69rem);
+                    @include top-bottom;
+                    border-radius: 0.5rem;
+                    background: #29a6dc;
+                    border: 2px solid #fff;
+                    
+                    .mS-circle{
+                        @include wh(0.03rem,0.03rem);
+                        border-radius: 50%;
+                        background: #fff;
+                        position: absolute;
+                        top: 0.27rem;
+                    }
+                    .mS-circle.one{
+                        left: 0.54rem;
+                    }
+                    .mS-circle.two{
+                        left: 0.60rem;
+                    }
+                    .mS-circle.thr{
+                        right: 0.54rem;
+                    }
+                    .mS-circle.four{
+                        right: 0.60rem;
+                    }
+                    
+                }
+                .mS-left{
+                    left: 0.08rem;
+                }
+                .mS-right{
+                    right: 0.08rem;
+                }
+                .mS-line{
+                    @include wh(0.03rem,0.59rem);
+                    @include center;
+                    @include bacImg('login/mS-line.png',0,0);
+                }
+                .mS-left-font,.mS-right-font{
+                    @include wh(2.4rem,0.69rem);
+                    @include top-bottom;
+                    border-radius: 0.5rem;
+                    h2,h4{
+                       text-align: center;
+                       
+                    }
+                    h2{
+                       @include font(0.24rem,#fafafa,0.24rem);
+                       margin-top:0.16rem; 
+                    }
+                    h4{
+                       @include font(0.14rem,#bddbe8,0.14rem);
+                       margin-top:0.04rem;
+                       font-weight: normal;
+                       font-family: 'Myriad Pro';
+                       font-variant:small-caps;   
+                       
+                    }
+                }
+                .mS-left-font{
+                    left: 0.08rem;
+                }
+                .mS-right-font{
+                    right: 0.08rem;
+                }
+            }
+        }
+        .messageS-con{
+            @include wh(100%,auto);
+            min-height: 6.17rem;
+            box-shadow: 0 0 0.12rem rgba(160,160,160,0.75);
+            border-radius: 0.1rem;
+            padding-bottom: 0.16rem;
+            background: #fff;
+            .mS-list{
+                @include wh(100%,auto);
+                li{
+                    @include wh(100%,0.91rem);
+                    border-bottom: 1px dotted #999;
+                    .mS-list-img{
+                       @include wh(0.32rem,0.32rem);
+                       @include top-bottom;
+                       @include bacImg('login/mS-list-img.png',0,0);
+                       left: 0.15rem;
+                    }
+                    .mS-list-title{
+                       @include wh(5.46rem,100%);
+                       position: absolute;
+                       left: 0.66rem;
+                       h2{
+                         @include font(0.28rem,#333,0.28rem);
+                         margin-top: 0.16rem;
+                       }
+                       h4{
+                         @include font(0.16rem,#999,0.16rem);
+                         margin-top: 0.08rem;
+                         font-family: 'Myriad Pro';
+                         font-variant: small-caps;
+                         font-weight: normal;
+                       } 
+                    }
+                    .mS-list-more{
+                       @include wh(0.09rem,0.17rem);
+                       @include top-bottom;
+                       @include bacImg('login/mS-arrow.png',0,0);
+                       right: 0.32rem;
+                    }
+                }
+            }
+        }
+        .messageM-con{
+            @include wh(7.02rem,auto);
+            @include left-right;
+            min-height: 6.17rem;
+            box-shadow: 0 0 0.12rem rgba(160,160,160,0.75);
+            border-radius: 0.1rem;
+            padding-bottom: 0.16rem;
+            position: absolute;
+            top: 1.13rem;
+            background: #fff;
+            .mM-list{
+                @include wh(100%,auto);
+                li{
+                    @include wh(100%,1.14rem);
+                    border-bottom: 1px dotted #999;
+                    .mM-list-img{
+                       @include wh(0.66rem,0.66rem);
+                       @include top-bottom;
+                       @include bacImg('login/mM-list-img.png',0,0);
+                       left: 0.18rem;
+                    }
+                    .mM-list-name{
+                       @include wh(4.8rem,100%);
+                       position: absolute;
+                       left: 1.01rem;
+                       h2{
+                         @include font(0.28rem,#333,0.28rem);
+                         margin-top: 0.16rem;
+                       }
+                       h4{
+                         @include font(0.16rem,#999,0.16rem);
+                         margin-top: 0.08rem;
+                         font-family: 'Myriad Pro';
+                         font-variant: small-caps;
+                         font-weight: normal;
+                       }
+                       .mM-list-con{
+                           @include wh(100%,auto);
+                           @include font(0.16rem,#666,0.16rem);
+                           overflow: hidden;
+                           text-overflow: ellipsis;
+                           white-space:nowrap;
+                           margin-top: 0.1rem; 
+                           padding: 0.04rem 0;
+                        } 
+                    }
+                    
+                    .mM-list-more{
+                       @include wh(1.4rem,0.16rem);
+                       @include top-bottom;
+                       right: 0;
+                       top: 0.37rem;
+                       .mM-list-moreImg{
+                           display: inline-block;
+                           @include wh(0.16rem,0.16rem);
+                           @include bacImg('login/mM-list-time.png',0,0);
+                       }
+                       .mM-list-date{
+                           display: inline-block;
+                           @include wh(auto,0.16rem);
+                           @include font(0.16rem,#666,0.16rem);
+                           white-space:nowrap;
+                           font-family: 'Myriad Pro';
+                           position: absolute;
+                           left: 0.2rem;
+                       }
+                    }
+                }
+                li:nth-last-child(1){
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+    
+    .messagse-dis{
+        display: none;
+    }
+
+}

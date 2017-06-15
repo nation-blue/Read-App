@@ -1,0 +1,161 @@
+@import '../../resource/base';
+
+@mixin bacColor($c){
+    background: $c;
+}
+
+@mixin font($s,$c,$h){
+    font-size: $s;
+    color: $c;
+    line-height: $h;
+}
+
+@mixin bacImg($u,$x,$y){
+    background-image: url($img-path+$u);
+    background-position: $x $y;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+
+//
+
+body{
+background:#fafafa; 
+}
+
+.feedback-23{
+    background:#F2F2F2; 
+    height: 100%;
+    .feedback-top{
+        @include wh(100%,auto);
+        .feedback-nav{
+            @include wh(100%,1rem);
+            background: #29a6dc;
+            .login-fanhui{
+                display: block;
+                @include wh(0.44rem,0.44rem);
+                @include top-bottom;
+                @include bacImg('login/nav-fanhui.png',0,0);
+                left: 0.25rem;
+            }
+            .login-title{
+                @include wh(6rem,1rem);
+                @include top-bottom;
+                left: 0.69rem;
+                text-align: center;
+                //font-weight: 600;
+                .one{
+                    @include wh(6rem,0.36rem);
+    //              @include left-right;
+                    @include font(0.36rem,#f2f2f2,0.36rem);
+                    text-align: center; 
+                    margin-top: 0.19rem;
+                }
+                .two{
+    //              @include left-right;
+                    @include wh(0.35rem,0.04rem);
+                    @include bacImg('login/nav-line.png',0,0);
+                    margin-left: 2.84rem;
+                    margin-top: 0.04rem;
+                }
+                .thr{
+                    @include wh(6rem,0.20rem);
+    //              @include left-right;
+                    @include font(0.20rem,#90dcff,0.20rem);
+                    text-align: center;
+                    margin-top: 0.09rem;
+                }
+            }
+            
+        }
+    }
+    .feedback-bot{
+        @include wh(100%,auto);
+        padding: 0.16rem 0.24rem;
+        .feedback-input{
+            @include wh(100%,3.26rem);
+            box-shadow: 0 0 0.12rem rgba(198,198,198,0.75);
+            border-radius:0.1rem;
+            textarea{
+              @include wh(100%,100%);
+              border:none;
+              resize: none;
+              padding: 0.26rem 0.17rem;
+              outline: none;
+              @include font(0.22rem,#333,0.24rem) ; 
+            }
+            .fb-reminder{
+                @include wh(100%,auto);
+                position: absolute;
+                left: 0.17rem;
+                top: 0.26rem;
+                background: pink;
+                .fb-img{
+                    @include wh(0.34rem,0.34rem);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @include bacImg('login/feedback1.png',0,0);
+                }
+                .fb-remd{
+                    @include wh(auto,100%);
+                    position: absolute;
+                    top: 0;
+                    left: 0.5rem;
+                    h2,h4{
+                        font-weight: normal;
+                        
+                    }
+                    h2{
+                       @include font(0.28rem,#333,0.28rem);
+                       margin-bottom: 0.08rem;
+                    }
+                    h4{
+                       @include font(0.16rem,#999,0.16rem)
+                    }
+                }
+            }
+            
+        }
+        .register-button{
+            margin-top:0.84rem;
+            @include wh(100%,0.68rem);
+            .register-btn{
+                @include wh(5.64rem,100%);
+                @include left-right;
+                border-radius: 50px;
+                background: #28dd8b;
+                z-index: 10;
+                .l-circle{
+                   @include wh(0.06rem,0.06rem); 
+                   border-radius:50%;
+                   background: #fff;
+                   @include top-bottom;
+                   
+                   z-index: 20;
+                }
+                .l-circle:nth-of-type(1){
+                    left: 0.32rem;
+                }
+                .l-circle:nth-of-type(2){
+                    right: 0.32rem;
+                }
+                .rightNow{
+                    display: block;
+                    @include wh(4.96rem,100%);
+                    @include left-right;
+                    text-align: center;
+                    @include font(0.28rem,#fff,0.68rem)
+                }
+            }
+            
+            
+        }
+    }
+    .feedback-dis{
+        display: none;
+    }
+}
+

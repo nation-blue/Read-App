@@ -1,0 +1,305 @@
+@import '../../resource/base';
+body{
+    background: #FAFAFA;
+    font-family:"苹方";
+    color: #666;
+}
+
+#my-26{
+    
+    .test{
+        filter:alpha(opacity=0.7);
+    }
+    //头部
+    #head{
+        width:100%;
+        height:1rem;
+        background:#29a6dc;
+        .circle{
+            width: 0.44rem;
+            height: 0.44rem;
+            background: #fff;
+            box-sizing: border-box;
+            border:0.02rem solid #0b6ebf;
+            border-radius:50%;
+            left:0.24rem;
+            @include top-bottom;
+            .icon{
+                display: block;
+                line-height: 0.4rem;
+                text-align: center;
+                font-size:0.3rem;
+                color:#3daedf;
+            }
+        }
+        .biaoti_box{
+            @include wh(3.56rem,1rem);
+    //      background: red;
+            @include left-right;
+            
+            .dazi{
+                color: #fafafa;
+                font-size: 0.36rem;
+                text-align: center;
+                margin-top: 0.08rem;
+    //          position: absolute;
+    //          top:0.1rem;
+            }
+            .gang{
+                @include wh(0.35rem,0.04rem);
+                @include left-right;
+                background: url($img-path+'s_24-30/gang.png') no-repeat;
+                background-size:0.35rem,0.04rem ;
+            }
+            .xiaozi{
+                color:#90dcff;
+                font-size: 0.2rem;
+                text-align: center;
+                margin-top: 0.02rem;
+            }
+        }
+        
+    }
+    
+    //我的资料上半部分  我的头像
+    #ziliao,#zl_mima{
+        @include wh(7.02rem,3.58rem);
+        background: #fff;
+        @include left-right;
+        box-shadow:0 0 0.1rem #d9d6d6;
+        margin-top:0.16rem;
+        border-radius:0.1rem;
+        li{
+            @include wh(100%,0.91rem);
+            border-bottom:0.03rem dashed #666666;
+            overflow: hidden;
+            position: relative;
+            .img1{
+               @include wh(0.32rem,0.32rem);
+    //         background: red;
+               position: absolute;
+               left: 0.16rem;
+               top: 0.29rem;
+               background: url($img-path+'s_24-30/touxiang.png') no-repeat;
+            }
+            .dazi{
+               position: absolute;
+               left:0.67rem;
+               top:0.18rem;
+               font-size: 0.28rem; 
+               color: #333;
+            }
+            .xiaozi{
+               position: absolute;
+               left:0.67rem;
+               top:0.52rem;
+               font-size: 0.16rem; 
+               color: #999999;
+               font-weight: none;
+            }
+            .jiantou{
+                display: block;
+                position: absolute;
+                right:0.31rem;
+                top:0.17rem;
+                color: #3aaddf;
+            }
+        }
+        li:nth-child(2),li:nth-child(3){
+            height: 0.9rem;
+            .img1{
+               background: url($img-path+'s_24-30/zhanghu.png') no-repeat; 
+            }
+            .youzi{
+                color: #333;
+                font-size: 0.24rem;
+                position: absolute;
+                right:0.19rem;
+                top:0.28rem;  
+            }
+        }
+        li:nth-child(3){
+            .img1{
+               background: url($img-path+'s_24-30/nicheng.png') no-repeat; 
+            }
+        }
+        li:nth-child(4){
+            height: 0.87rem;
+            border:none;
+            .img1{
+               background: url($img-path+'s_24-30/xingbie.png') no-repeat; 
+            }
+        }
+    }
+    //设置密码
+    #zl_mima{
+        @include wh(7.02rem,1.8rem);
+        top:4.8rem;
+        li:nth-child(1){
+            .img1{
+               background: url($img-path+'s_24-30/bangding.png') no-repeat; 
+            }
+            .youzi{
+                color: #333;
+                font-size: 0.24rem;
+                position: absolute;
+                right:0.19rem;
+                top:0.28rem;
+            }
+        }
+        li:nth-child(2){
+            @include wh(100%,0.89rem);
+            border:none;
+            .img1{
+               background: url($img-path+'s_24-30/nima.png') no-repeat; 
+            }
+        }
+    }
+    
+    
+    //我的头像的弹出框
+    .tx_tan,.tx_tan2{
+        z-index: 300;
+        display: none;
+        box-shadow: 0 0 0 1000px rgba(0,0,0,0.6);
+        .bg1{
+           @include wh(4.78rem,2.95rem); 
+           @include left-right;
+           top:3.82rem;
+           background: url($img-path+'s_24-30/bg1.png') no-repeat;
+           background-size:4.78rem,2.95rem;
+           border-radius: 0.04rem;
+           .tan1_top{
+              @include wh(4.2rem,0.72rem); 
+    //        background: red;
+              position:absolute;
+              top:0;
+              left:0.52rem; 
+              .xtx1{
+                  @include wh(0.4rem,0.4rem);
+    //            background: pink;
+                  position: absolute;
+                  top:0.16rem;
+                  left:0;
+                  background: url($img-path+'s_24-30/xtx1.png') no-repeat;
+                  background-size: 0.4rem,0.4rem;
+              }
+              .xtx_dazi{
+                  font-size: 0.22rem;
+                  color:#fff;
+                  position: absolute;
+                  top:0.07rem;
+                  left:0.51rem;
+              }
+              .xtx_xiaozi{
+                  font-size: 0.16rem;
+                  color:#d1fef6;
+                  position: absolute;
+                  top:0.38rem;
+                  left:0.51rem;
+              }
+           }
+           .tan1_center,.tan1_bottom{
+               @include wh(100%,0.87rem);
+               border-bottom: 0.03rem dashed #999999;
+               position: absolute;
+               top:0.75rem;
+               left:0;
+               .tan1_box{
+                  @include wh(4.4rem,0.84rem); 
+    //            background: red; 
+                  position: absolute;
+                  top:0rem;
+                  left:0.26rem;
+                  .xtx2{
+                     @include wh(0.3rem,0.3rem);
+    //               background: pink;
+                     position:absolute;
+                     left:0;
+                     top:0.33rem;
+                     background: url($img-path+'s_24-30/xtx2.png') no-repeat;
+                     background-size: 0.3rem,0.3rem; 
+                  }
+                  .xtx2_dazi{
+                      font-size: 0.24rem;
+                      color:#333;
+                      position: absolute;
+                      top:0.14rem;
+                      left:0.47rem; 
+                  }
+                  .xtx2_xiaozi{
+                      font-size: 0.16rem;
+                      color:#666;
+                      position: absolute;
+                      top:0.42rem;
+                      left:0.42rem; 
+                  }
+               }
+           }
+           .tan1_bottom{
+              top:1.62rem;
+              border: none; 
+              .tan1_box .xtx2{
+                 background: url($img-path+'s_24-30/xtx3.png') no-repeat; 
+                 background-size: 0.3rem,0.3rem; 
+              }
+           }
+           .quxiao{
+             @include wh(2.54rem,0.65rem);
+             background: #29dcbc;
+             border-radius: 0.34rem; 
+             @include left-right;
+             top:2.61rem;
+             font-size: 0.24rem;
+             color:#fff;
+             text-align: center;
+             line-height: 0.65rem;  
+           }
+        }
+    }
+    
+    .tx_tan2{
+    //  display: block;
+        .bg1{
+           .tan1_top{
+              .xtx1{
+                 background: url($img-path+'s_24-30/xxb1.png') no-repeat;  
+                 background-size: 0.4rem,0.4rem; 
+              }  
+           }
+           .quan_box,.quan2_box{
+              @include wh(0.8rem,0.8rem); 
+    //        background: red;
+              position: absolute;
+              top:1.2rem;
+              left:1.02rem;
+              .quan,.quan2{
+                 @include wh(0.66rem,0.66rem);
+                 background: #fff; 
+                 @include left-right;
+                 @include top-bottom;
+                 border-radius: 50%; 
+                 box-shadow: 0rem 0rem 0.2rem #eeeeee ;
+                 #nan{
+                    @include wh(0.66rem,0.66rem);
+                    background: url($img-path+'s_24-30/nan.png') no-repeat;  
+                    background-size: 0.66rem,0.66rem;  
+                 }
+              }
+           }
+           .quan2_box{
+               left:2.88rem;
+               .quan2{
+                  background: #29dcbc; 
+                  #nv{
+                     @include wh(0.66rem,0.66rem);
+                     background: url($img-path+'s_24-30/nv.png') no-repeat;  
+                     background-size: 0.66rem,0.66rem;   
+                  } 
+               }
+           }
+        }
+    }
+}
+
+

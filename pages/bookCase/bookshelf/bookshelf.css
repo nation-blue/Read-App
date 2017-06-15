@@ -1,0 +1,408 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative; }
+
+img {
+  border: none; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px;
+  font-family: "苹方"; }
+
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media only screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media only screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media only screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media only screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 102.4px; } }
+
+@media only screen and (min-width: 800px) {
+  html {
+    font-size: 106.66667px; } }
+
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 136.53333px; } }
+
+h1, h2, h3, h4 {
+  font-weight: normal; }
+
+* {
+  font-family: "苹方","微软雅黑"; }
+
+#box1 {
+  width: 100%;
+  height: 17rem;
+  overflow: visible; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("//at.alicdn.com/t/font_us5mflcwnj73z0k9.eot");
+  src: url("//at.alicdn.com/t/font_us5mflcwnj73z0k9.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_us5mflcwnj73z0k9.woff") format("woff"), url("//at.alicdn.com/t/font_us5mflcwnj73z0k9.ttf") format("truetype"), url("//at.alicdn.com/t/font_us5mflcwnj73z0k9.svg#iconfont") format("svg"); }
+
+/*header*/
+#header-bookshelf {
+  width: 100%;
+  height: 0.88rem;
+  background: #29a6dc; }
+  #header-bookshelf .inner-box {
+    width: 7.02rem;
+    height: 0.9rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto; }
+    #header-bookshelf .inner-box .circle2 {
+      width: 0.5rem;
+      height: 0.5rem;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      border: 0.03rem solid #076cbe;
+      border-radius: 50%;
+      background: #fff;
+      font-family: "iconfont" !important;
+      font-size: 0.35rem;
+      color: #4bb4e2;
+      font-style: normal;
+      text-align: center;
+      line-height: 0.5rem;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-stroke-width: 0.2px;
+      -moz-osx-font-smoothing: grayscale; }
+    #header-bookshelf .inner-box .circle2 {
+      right: 0; }
+    #header-bookshelf .inner-box .search-center {
+      width: 5.6rem;
+      height: 0.54rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto; }
+      #header-bookshelf .inner-box .search-center .title {
+        text-align: center;
+        color: #fff;
+        font-size: 0.36rem;
+        line-height: 0.3rem; }
+      #header-bookshelf .inner-box .search-center .line {
+        width: 0.84rem;
+        height: 0.07rem;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-image: url("../images/line.png");
+        background-size: cover; }
+      #header-bookshelf .inner-box .search-center .titleE {
+        text-align: center;
+        color: #fff;
+        font-size: 0.18rem;
+        line-height: 0.4rem;
+        font-variant: small-caps; }
+
+/*header*/
+.banner {
+  width: 100%;
+  height: 4.07rem;
+  padding-top: 0.38rem; }
+  .banner #dg-container {
+    width: 7.02rem;
+    height: 3.69rem;
+    margin-left: 0.24rem; }
+    .banner #dg-container .dg-wrapper {
+      width: 6.67rem;
+      height: 3.21rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 0;
+      background-image: url("../images/7.png");
+      background-size: cover; }
+    .banner #dg-container .button {
+      width: 0.6rem;
+      height: 0.24rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 0; }
+      .banner #dg-container .button li {
+        width: 0.08rem;
+        height: 0.08rem;
+        float: left;
+        margin: 0 0.06rem;
+        border: 0.01rem solid #3fabfe;
+        border-radius: 50%; }
+      .banner #dg-container .button .first {
+        background: #3fabfe; }
+
+.title-top-box1 {
+  width: 7.02rem;
+  height: 0.75rem;
+  margin-left: 0.23rem; }
+  .title-top-box1 .circle {
+    width: 0.3rem;
+    height: 0.3rem;
+    margin-top: 0.1rem;
+    margin-left: 0.15rem;
+    float: left;
+    background-image: url("../images/1.png");
+    background-size: cover; }
+
+.zibox {
+  float: left;
+  height: 100%;
+  margin-top: 0.1rem;
+  margin-left: 0.16rem; }
+  .zibox .name {
+    font-size: 0.3rem;
+    line-height: 0.3rem;
+    color: #333;
+    font-weight: 700; }
+    .zibox .name .three {
+      width: 0.18rem;
+      height: 0.04rem;
+      position: absolute;
+      bottom: 0;
+      left: 1.3rem;
+      background-image: url("../images/three.png");
+      background-size: cover; }
+  .zibox .nameE {
+    margin-top: 0.1rem;
+    font-size: 0.22rem;
+    line-height: 0.22rem;
+    color: #666;
+    font-variant: small-caps; }
+
+/*huadong-box*/
+.huadong-box {
+  width: 7.02rem;
+  height: 4.17rem;
+  margin-left: 0.24rem;
+  overflow: hidden; }
+  .huadong-box .three-box {
+    width: 13.3rem;
+    height: 4.17rem;
+    padding-top: 0.32rem; }
+    .huadong-box .three-box .float {
+      width: 2.5rem;
+      height: 3.61rem;
+      float: left;
+      margin: 0 0.08rem;
+      background-image: url("../images/17.png");
+      background-size: cover;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+      .huadong-box .three-box .float .picture {
+        width: 2.11rem;
+        height: 2.85rem;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: -0.15rem;
+        background-image: url("../images/6.png");
+        background-size: cover; }
+      .huadong-box .three-box .float .bookname {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 0.5rem;
+        color: #fff;
+        font-size: 0.24rem;
+        line-height: 0.24rem;
+        color: #858585;
+        text-align: center; }
+      .huadong-box .three-box .float .Ename {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 0.28rem;
+        color: #fff;
+        font-size: 0.18rem;
+        line-height: 0.18rem;
+        color: #858585;
+        text-align: center;
+        font-variant: small-caps; }
+
+/*huadong-box*/
+.content-box1 {
+  width: 7.02rem;
+  height: 2.22rem;
+  margin-left: 0.24rem;
+  margin-top: 0.28rem;
+  background: #fff;
+  border-radius: 2%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  .content-box1 .picture {
+    width: 1.38rem;
+    height: 1.99rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0.12rem;
+    background-image: url("../images/5.png");
+    background-size: cover; }
+  .content-box1 .right-box {
+    height: 1.99rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 1.70rem;
+    right: 0.1rem; }
+    .content-box1 .right-box h1 {
+      font-size: 0.28rem;
+      text-align: left;
+      line-height: 0.5rem;
+      color: #333;
+      font-family: "苹方","微软雅黑"; }
+    .content-box1 .right-box p {
+      color: #d9d9d9;
+      font-size: 0.16rem;
+      text-align: left;
+      line-height: 0.2rem;
+      font-family: "苹方","微软雅黑";
+      font-variant: small-caps; }
+    .content-box1 .right-box .dotted {
+      width: 3.42rem;
+      height: 0.1rem;
+      border-bottom: 0.02rem dotted #999; }
+    .content-box1 .right-box h2 {
+      height: 0.44rem;
+      color: #b3b3b3;
+      font-size: 0.22rem;
+      text-align: left;
+      line-height: 0.44rem;
+      font-family: "苹方","微软雅黑"; }
+    .content-box1 .right-box span {
+      position: absolute;
+      left: 0;
+      bottom: 0.07rem;
+      color: #999;
+      font-size: 0.16rem; }
+    .content-box1 .right-box span:after {
+      content: '36%';
+      color: #39bbeb;
+      font-size: 0.16rem; }
+    .content-box1 .right-box .readpercent {
+      width: 1.7rem;
+      height: 0.06rem;
+      position: absolute;
+      left: 1.1rem;
+      bottom: 0.19rem;
+      background: #d4d4d4;
+      border-radius: 50rem; }
+      .content-box1 .right-box .readpercent .percent {
+        width: 36%;
+        height: 0.06rem;
+        background: #94d1e6; }
+    .content-box1 .right-box .read {
+      width: 1.51rem;
+      height: 0.44rem;
+      background-image: url("../images/4.png");
+      background-size: cover;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: #fff;
+      font-size: 0.22rem;
+      text-align: center;
+      line-height: 0.44rem; }
+
+.fixed {
+  width: 100%;
+  height: 1rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100; }
+  .fixed .type {
+    width: 33.33333%;
+    height: 1rem;
+    float: left;
+    background-image: url("../images/type2.png");
+    background-size: cover; }
+    .fixed .type .xian {
+      width: 0.02rem;
+      height: 0.94rem;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 0;
+      background: #717171; }
+    .fixed .type .contain {
+      width: 0.54rem;
+      height: 1rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto; }
+      .fixed .type .contain .picture {
+        width: 0.54rem;
+        height: 0.5rem;
+        font-family: "iconfont";
+        color: #67686a;
+        text-align: center;
+        line-height: 0.7rem;
+        font-size: 0.4rem; }
+      .fixed .type .contain .picture.change {
+        font-size: 0.5rem; }
+      .fixed .type .contain .picture.change.only {
+        line-height: 0.6rem; }
+      .fixed .type .contain .name {
+        width: 0.54rem;
+        height: 0.5rem;
+        color: #67686a;
+        font-size: 0.26rem;
+        text-align: center;
+        line-height: 0.5rem; }
+  .fixed .type2.type {
+    background-image: url("../images/type1.png"); }
+    .fixed .type2.type .contain .picture, .fixed .type2.type .contain .name {
+      color: #fff; }

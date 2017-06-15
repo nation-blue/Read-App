@@ -1,0 +1,8 @@
+<div>
+		<ul>
+			<li class="lis" ng-repeat='v in pics' style="background-image:url({{v.de}});">
+				<div class="fgline" ng-if='($index!==2)'></div>
+				<div ng-class="{active:($index==0)}" class="showing" style="background-image:url({{v.hi}});"></div>
+			</li>
+		</ul>
+</div>

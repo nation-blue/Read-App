@@ -1,0 +1,137 @@
+@import'base';
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1479450372436'); /* IE9*/
+  src: url('iconfont.eot?t=1479450372436#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1479450372436') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1479450372436') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1479450372436#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shezhi:before { content: "\e604"; }
+
+.icon-icon:before { content: "\e603"; }
+
+.icon-60:before { content: "\e647"; }
+
+.icon-duihao:before { content: "\e601"; }
+
+.icon-bofangqibofang:before { content: "\e610"; }
+
+.icon-bofangqizanting:before { content: "\e617"; }
+
+.icon-bofangqibofang1:before { content: "\e602"; }
+
+.icon-yinliang:before { content: "\e629"; }
+
+.icon-p-menus:before { content: "\e670"; }
+
+.icon-xiaoyuhao:before { content: "\e6e4"; }
+
+.icon-iconfontdaohanggonggao:before { content: "\e62e"; }
+
+.icon-xiazai:before { content: "\e62f"; }
+
+.icon-hanbaobao:before { content: "\e648"; }
+
+.icon-zhongguoliantong:before { content: "\e600"; }
+
+.icon-cha:before { content: "\e67d"; }
+
+.icon-shangyiqu101:before { content: "\e6e1"; }
+
+.icon-suijibofang01:before { content: "\e6e2"; }
+
+.icon-xiayiqu101:before { content: "\e718"; }
+
+.icon-biaoqian:before { content: "\e6f8"; }
+
+.icon-mulu:before { content: "\e712"; }
+
+.icon-yueliang:before { content: "\e642"; }
+
+.icon-canoe_slalom:before { content: "\e77c"; }
+.biaoqian{
+    position: absolute;
+    top:0.35rem;
+    right:1rem;
+    color:white;
+    font-size:0.28rem;
+}
+#main{
+    width: 100%;
+    height:11.96rem;
+    background: #ffe9b0;
+}
+#end{
+    width: 100%;
+    height:2.25rem;
+    background:#151c2b;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    .syz,.xyz{
+        width: 1rem;
+        height: 0.5rem;
+        position: absolute;
+        top:0.3rem;
+        line-height: .5rem;
+        text-align: center;
+        font-size:.28rem;
+        color:#c6c6c6;
+      
+    }
+    .syz{
+        left: .3rem;
+    }.xyz{
+        right: .3rem;
+    }
+    .jindu{
+        width:4.67rem;
+        height:.12rem;
+        background:#d5d5d5;
+        border-radius: 10rem;
+        position: absolute;
+        top:0.46rem;
+        left:1.42rem;
+        .yuan{
+            width: .24rem;
+            height: .24rem;
+            background:url("../../img/w-39/yuna.jpg") 0 0 no-repeat;
+            position: absolute;
+            left: .5rem;
+            top:0;
+        }
+    }
+    .circles1,.circles2,.circles3{
+        width: 0.57rem;
+        height: 0.57rem;
+        background: #29a6dc;
+       
+        border-radius:50%;
+        position: absolute;
+        bottom:0.54rem;
+        .icons{
+            line-height: 0.57rem;
+            text-align: center;
+            font-size:0.4rem;
+            color:#fff;
+        }
+    }
+    .circles1{
+        left:1.18rem;
+    }.circles2{
+        left:3.45rem;
+    }
+    .circles3{
+        right:1.18rem;
+    }
+}

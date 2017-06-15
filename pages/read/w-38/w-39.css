@@ -1,0 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative; }
+
+img {
+  border: none; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px; }
+
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media only screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media only screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media only screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media only screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 102.4px; } }
+
+@media only screen and (min-width: 800px) {
+  html {
+    font-size: 106.66667px; } }
+
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 136.53333px; } }
+
+@font-face {
+  font-family: "iconfont";
+  src: url("iconfont.eot?t=1479450372436");
+  /* IE9*/
+  src: url("iconfont.eot?t=1479450372436#iefix") format("embedded-opentype"), url("iconfont.woff?t=1479450372436") format("woff"), url("iconfont.ttf?t=1479450372436") format("truetype"), url("iconfont.svg?t=1479450372436#iconfont") format("svg");
+  /* iOS 4.1- */ }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-shezhi:before {
+  content: "\e604"; }
+
+.icon-icon:before {
+  content: "\e603"; }
+
+.icon-60:before {
+  content: "\e647"; }
+
+.icon-duihao:before {
+  content: "\e601"; }
+
+.icon-bofangqibofang:before {
+  content: "\e610"; }
+
+.icon-bofangqizanting:before {
+  content: "\e617"; }
+
+.icon-bofangqibofang1:before {
+  content: "\e602"; }
+
+.icon-yinliang:before {
+  content: "\e629"; }
+
+.icon-p-menus:before {
+  content: "\e670"; }
+
+.icon-xiaoyuhao:before {
+  content: "\e6e4"; }
+
+.icon-iconfontdaohanggonggao:before {
+  content: "\e62e"; }
+
+.icon-xiazai:before {
+  content: "\e62f"; }
+
+.icon-hanbaobao:before {
+  content: "\e648"; }
+
+.icon-zhongguoliantong:before {
+  content: "\e600"; }
+
+.icon-cha:before {
+  content: "\e67d"; }
+
+.icon-shangyiqu101:before {
+  content: "\e6e1"; }
+
+.icon-suijibofang01:before {
+  content: "\e6e2"; }
+
+.icon-xiayiqu101:before {
+  content: "\e718"; }
+
+.icon-biaoqian:before {
+  content: "\e6f8"; }
+
+.icon-mulu:before {
+  content: "\e712"; }
+
+.icon-yueliang:before {
+  content: "\e642"; }
+
+.icon-canoe_slalom:before {
+  content: "\e77c"; }
+
+.biaoqian {
+  position: absolute;
+  top: 0.35rem;
+  right: 1rem;
+  color: white;
+  font-size: 0.28rem; }
+
+#main {
+  width: 100%;
+  height: 11.96rem;
+  background: #ffe9b0; }
+
+#end {
+  width: 100%;
+  height: 2.25rem;
+  background: #151c2b;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+  #end .syz, #end .xyz {
+    width: 1rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 0.3rem;
+    line-height: .5rem;
+    text-align: center;
+    font-size: .28rem;
+    color: #c6c6c6; }
+  #end .syz {
+    left: .3rem; }
+  #end .xyz {
+    right: .3rem; }
+  #end .jindu {
+    width: 4.67rem;
+    height: .12rem;
+    background: #d5d5d5;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0.46rem;
+    left: 1.42rem; }
+    #end .jindu .yuan {
+      width: .24rem;
+      height: .24rem;
+      
+      position: absolute;
+      left: .5rem;
+      top: 0; }
+  #end .circles1, #end .circles2, #end .circles3 {
+    width: 0.57rem;
+    height: 0.57rem;
+    background: #29a6dc;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0.54rem; }
+    #end .circles1 .icons, #end .circles2 .icons, #end .circles3 .icons {
+      line-height: 0.57rem;
+      text-align: center;
+      font-size: 0.4rem;
+      color: #fff; }
+  #end .circles1 {
+    left: 1.18rem; }
+  #end .circles2 {
+    left: 3.45rem; }
+  #end .circles3 {
+    right: 1.18rem; }

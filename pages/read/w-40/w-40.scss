@@ -1,0 +1,157 @@
+@import'base';
+$img-path:'../img/';
+$img-pathb:$img-path+'bookstore';
+$blue:#29a6dc;
+@mixin bg-center{
+    background-repeat: no-repeat;
+    background-position:center center;
+}
+#w-40{
+    .lc-head{
+    position:absolute;
+    left: 0;
+    top: 0;
+    @include wh(100%,1rem);
+    background:$blue;
+    .lc-nav{
+        @include wh(5.7rem,0.84rem);
+        @include center();
+        background: #2a3441;
+        border-radius: 0.42rem;
+        overflow: hidden;
+        .lis{
+            float:left;
+            @include wh(33.33%,0.84rem);
+            @include bg-center();
+            background-size: 1.05rem 0.38rem;
+            
+            .fgline{
+                @include top-bottom();
+                @include wh(3px,100%);
+                background: url($img-pathb+'/fgline.jpg') no-repeat center center;
+                right:-1.5px;
+            }
+            .showing{
+                @include center();
+                @include bg-center();
+                @include wh(1.65rem,0.7rem);
+                background-color: $blue;
+                border-radius:0.35rem;
+                border:2px solid #fff;
+                display: none;
+                background-size: 1.05rem 0.38rem;
+            }
+            .showing.active{
+                display: block;
+            }
+            &:nth-of-type(1){
+                background-image:url($img-pathb+'/selected0.jpg');  
+                .showing{
+                    background-image:url($img-pathb+'/selected1.jpg');                
+                }              
+            }
+            &:nth-of-type(2){
+                background-image:url($img-pathb+'/list0.jpg'); 
+                .showing{
+                    background-image:url($img-pathb+'/list1.jpg');                
+                }                      
+            }
+            &:nth-of-type(3){
+                background-image:url($img-pathb+'/classify0.jpg');                
+                .showing{
+                    background-image:url($img-pathb+'/classify1.jpg');                
+                }       
+            }
+        }
+    }
+    .search{
+        @include top-bottom();
+        @include wh(0.44rem,0.44rem);
+        @include bg-center();
+        border-radius: 50%;
+        border:2px solid #0c6fbf;
+        left:0.24rem;
+        background-image:url($img-pathb+'/search.jpg');
+        background-color:#fff;
+        background-size: 0.21rem 0.19rem;
+        cursor: pointer;
+        
+    }
+}
+.g-cata{
+    position: absolute;
+    left: 0;
+    top:1rem;
+    width: 100%;
+    font-size:0.28rem;
+    
+    .g-cata-list{
+       
+    width: 100%;
+    height: 0.9rem;
+    border-bottom: 1px dashed #999;
+    padding-left: 0.15rem;
+    padding-right: 0.15rem;
+    .g-cata-list-left{
+            height: 100%;
+            padding-left: 0.25rem;
+            float: left;
+            line-height: 0.9rem;
+            span{
+                padding-right: 0.2rem;
+            }
+    }
+    .g-cata-list-right{
+        height: 100%;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+        float: right;
+        line-height: 0.9rem;
+    }
+
+    }
+   .active  span{
+    color: #357fe4;
+}
+}
+.num{
+    width: 100%;
+    height:0.48rem;
+    background: #e5e5e5;
+    position: absolute;
+    left: 0;
+    top:1rem;
+    line-height: 0.48rem;
+    text-align: center;
+    
+}
+.shuqian{
+    position: absolute;
+    left: 0;
+    top:1.48rem;
+    width: 100%;
+    font-size:0.28rem;
+    .marker{
+        width: 100%;
+        height: 1.17rem;
+        .tubiao{
+            width: 0.66rem;
+            height:0.66rem;
+            position: absolute;
+            left: 0.33rem;
+            top: 0.25rem;
+            background: red;
+        }
+        .title{
+            width: 4.45rem;
+            height:0.5rem;
+            position: absolute;
+            left: 1.2rem;
+            top: 0.1rem;
+            background: red;
+        }
+    }
+    
+}
+
+}

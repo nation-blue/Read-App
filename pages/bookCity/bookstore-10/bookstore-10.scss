@@ -1,0 +1,318 @@
+@import'../../resource/base';
+
+$img-pathb:$img-path+'bookstore';
+$blue:#29a6dc;
+@mixin bg-center{
+    background-repeat: no-repeat;
+    background-position:center center;
+}
+#lc-body{
+    background: #f2f2f2;
+    .clear{
+        clear: both;
+    }
+}
+#lc-head{
+    position: fixed;
+    left: 0;
+    top: 0;
+    @include wh(100%,1rem);
+    background:$blue;
+    z-index: 10;
+    .lc-nav{
+        @include wh(5.7rem,0.84rem);
+        @include center();
+        background: #2a3441;
+        border-radius: 0.42rem;
+        overflow: hidden;
+        .lis{
+            float:left;
+            @include wh(33.33%,0.84rem);
+            @include bg-center();
+            background-size: 1.05rem 0.38rem;
+            
+            .fgline{
+                @include top-bottom();
+                @include wh(3px,100%);
+                background: url($img-pathb+'/fgline.jpg') no-repeat center center;
+                right:-1.5px;
+            }
+            .showing{
+                @include center();
+                @include bg-center();
+                @include wh(1.65rem,0.7rem);
+                background-color: $blue;
+                border-radius:0.35rem;
+                border:2px solid #fff;
+                display: none;
+                background-size: 1.05rem 0.38rem;
+            }
+            .showing.active{
+                display: block;
+            }
+            &:nth-of-type(1){
+                background-image:url($img-pathb+'/selected0.jpg');  
+                .showing{
+                    background-image:url($img-pathb+'/selected1.jpg');                
+                }              
+            }
+            &:nth-of-type(2){
+                background-image:url($img-pathb+'/list0.jpg'); 
+                .showing{
+                    background-image:url($img-pathb+'/list1.jpg');                
+                }                      
+            }
+            &:nth-of-type(3){
+                background-image:url($img-pathb+'/classify0.jpg');                
+                .showing{
+                    background-image:url($img-pathb+'/classify1.jpg');                
+                }       
+            }
+        }
+    }
+    .search{
+        @include top-bottom();
+        @include wh(0.44rem,0.44rem);
+        @include bg-center();
+        border-radius: 50%;
+        border:2px solid #0c6fbf;
+        right:0.24rem;
+        background-image:url($img-pathb+'/search.jpg');
+        background-color:#fff;
+        background-size: 0.21rem 0.19rem;
+        cursor: pointer;
+        
+    }
+}
+.lc-main{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 1rem 0;
+    display: none;
+    width: 100%;
+    overflow: hidden;
+    background: #f2f2f2;
+}
+.lc-main.active{
+    display: block;
+}
+#lc-banner{
+    @include wh(100%,5.05rem);
+    .bbox{
+        @include wh(100%,4.83rem);
+        overflow: hidden;
+        box-shadow:0px 1px 16px rgba(174,174,174,0.33);
+        li{
+            @include center();
+            @include wh(100%,100%);
+            img{
+                @include wh(100%,auto);
+            }           
+        }
+    }
+    .libox{
+        @include left-right();
+        bottom:0;
+        @include wh(0.54rem,0.08rem);
+        li{
+            float: left;
+            border:1px solid $blue;
+            @include wh(0.08rem,0.08rem);
+            margin:0 0.05rem;
+            border-radius: 50%;
+        }
+        li.active{
+            background: $blue;
+        }
+    }
+}
+#lc-newbook{
+    width: 100%;
+    .title{
+        @include wh(100%,0.64rem);
+        background: url($img-pathb+'/new-arrival.jpg') no-repeat 0.38rem top;
+        background-size: 2.08rem 0.54rem;
+    }
+    .content{
+        margin: 0 auto;
+        overflow: hidden;
+        @include wh(7.2rem,auto);
+        .lis{
+            padding:0.3rem;
+            @include wh(2.4rem,4.05rem);
+            float: left;
+            .imgs{
+                @include wh(1.8rem,2.55rem);
+                @include bg-center();
+                img{
+                    height: 2.55rem;
+                    @include left-right();
+                }
+            }
+            .mes{
+                padding: 0.05rem;
+                .name{
+                    font-size: 0.2rem;
+                    color:#333;
+                }
+                .aur{
+                    font-size: 0.18px;
+                    color:#999;
+                }  
+            }
+        }
+    }
+}
+.list{
+    @include wh(100%,2.7rem);
+    @include bg-center;
+    background-image:url($img-pathb+"/list-bg.jpg");
+    background-size:100%;
+    margin-bottom: 0.16rem;
+    .lista{
+        display: block;
+        height: 2.7rem;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    span{
+        position: absolute;
+        left: 4.68rem;
+        font-size:0.22rem;
+        color: #fff;
+        line-height: 0.22rem;
+        z-index: 0.5;
+    }
+    .top1{
+        top:0.7rem;
+    }
+    .top2{
+        top:1.23rem;
+    }
+    .top3{
+        top:1.74rem;
+    }
+}
+.bookclass{
+    .atit{
+        @include wh(100%,0.6rem);
+        background: #ace1f8 url($img-pathb+"/bookicon.jpg") no-repeat 0.38rem center;
+        background-size: 0.38rem,auto;
+        box-shadow:0px 0px 16px rgba(0,0,0,0.3);   
+        span{
+            font-size: 0.22rem;
+            color:#666;
+            margin-left: 0.8rem;
+            line-height: 0.6rem;
+        }
+    }
+    .main{
+        background:url($img-pathb+'/listmbg.jpg') no-repeat center -0.6rem;
+        background-size:100% auto;
+        overflow: hidden;
+        width: 100%;
+        span{
+            display: block;
+            font-size:0.28rem;
+            color:$blue;
+            margin-left:0.33rem;
+            height: 0.83rem;
+            line-height: 0.9rem;
+        }
+        .libox{
+            display: block;
+            width: 6.84rem;
+            margin: 0 auto;
+            overflow: hidden;
+            margin-bottom: 0.11rem;
+            .lis{
+                @include wh(2.28rem,1.36rem);
+                padding:0.125rem 0.24rem;
+                @include bg-center();
+                background-size: 2.03rem 0.88rem;
+                float:left;
+                text-align:center;
+                line-height:1.1rem; 
+                font-size:0.32rem;
+                a{
+                    color:#fff; 
+                }
+                &:nth-of-type(2n){
+                    background-image: url($img-pathb+'/classbg2.jpg');
+                }
+                &:nth-of-type(2n+1){
+                    background-image: url($img-pathb+'/classbg1.jpg');
+                }
+            }
+        }
+    }
+}
+#lc-foot{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    @include wh(100%,1rem);
+    z-index:1;
+    .lis{
+            float:left;
+            @include wh(33.33%,1rem);
+            @include bg-center();
+            background-size: 2.49rem,1rem;
+            a{
+                display: block;
+                height: 1rem;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 10;
+            }
+            .fgline{
+                @include top-bottom();
+                @include wh(1px,0.98rem);
+                background: #717171;
+                right:-0.5px;
+            }
+//          .showing{
+//              @include bg-center();
+//              @include wh(1.65rem,0.7rem);
+//              border:2px solid #fff;
+//              display: none;
+//              background-size: 2.49rem 1rem;
+//          }
+//          .showing.active{
+//              display: block;
+//          }
+            &:nth-of-type(1){
+                background-image:url($img-pathb+'/bj0.jpg');  
+//              .showing{
+//                  background-image:url($img-pathb+'/selected1.jpg');                
+//              }              
+            }
+            &:nth-of-type(2){
+                background-image:url($img-pathb+'/bs1.jpg'); 
+//              .showing{
+//                  background-image:url($img-pathb+'/list1.jpg');                
+//              }                      
+            }
+            &:nth-of-type(3){
+                background-image:url($img-pathb+'/bm0.jpg');               
+//              .showing{
+//                  background-image:url($img-pathb+'/classify1.jpg');                
+//              }       
+            }
+        }
+}
+
+#zhanwei{
+    width: 100%;
+    height:2.16rem;
+}
+#lc-head.bst-11{
+    top:1rem;
+    height: 1.16rem;
+    background: #f2f2f2;
+}
